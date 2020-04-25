@@ -1,17 +1,24 @@
 body{
 	margin:0px;
 	padding:0px;
-	background-color:gray;
+	background-color:black;
 }
+
+
+
 .form {
 background-color:silver;
 width:350px;
 height:450px;
 margin:auto;
 margin-top:10%;
-
+border: 2px solid white;
 text-align:center;
 border-radius:30px;
+transition: 0.5s ease;
+}
+.form:hover{
+	border: 2px solid green;
 }
 .form h1{
 font-family: Arial, Helvetica, sans-serif;
@@ -32,6 +39,9 @@ transition: 0.5s ease;
 	outline: none;
 	transition: 0.5s ease;
 }
+.login::placeholder{
+	color: black;
+}
 .login:focus{
 	border: 2px solid green;
 	cursor: text;
@@ -39,4 +49,31 @@ transition: 0.5s ease;
 .login:hover{
 	border: 2px solid rgba(13, 197, 13, 0.63);
 	
+}
+.form input[type="submit"]{
+	margin: 5px auto;
+	padding: 12px 30px;
+	border-radius: 10px;
+	outline: none;
+	background-color: black;
+	color: white;
+	border: 2px solid;
+	transition: 0.5s ease;
+}	
+.form input[type="submit"]:hover{
+	border: 2px solid rgba(13, 197, 13, 0.63);
+}
+.form a{
+	/* margin-top: 5px; */
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	transition: 0.5s ease;
+	display: block;
+}
+#form_lostpassword{
+	margin-top: 40px;
+}
+.form a:hover{
+	color: rgba(13, 197, 13, 0.63);;
 }
